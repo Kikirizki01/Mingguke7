@@ -11,7 +11,13 @@ public class Employee extends StaffMember {
 		socialSecurityNumber = socSecNumber;
 		payRate = rate;
 	}
-	
+
+	public String toString(){
+		String result = super.toString();
+		result += "\nSocial Security Number: " + socialSecurityNumber;
+		return result;
+	}
+	 
 	public double pay()
 	{
 		return payRate;
